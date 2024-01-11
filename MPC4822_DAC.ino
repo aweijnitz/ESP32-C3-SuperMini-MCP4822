@@ -68,6 +68,9 @@ void setOutput(byte channel, uint16_t val) {
   digitalWrite(CHIP_SELECT, HIGH);  // deselect chip (active low)
 }
 
+/**
+ * Convert volt to a value between 0 and 4095
+ */
 inline uint16_t voltToDACVal(const float volt) {
   return (uint16_t)((volt / Vref) * DAC_MAX_OUT_VALUE); 
 }
@@ -85,7 +88,7 @@ void loop() {
 
   // Output 1.024V
   float outputVolt = 1.0;
-  value = voltToDACVal(outputVolt); // Convert 0.5V to a value between 0 and 4095
+  value = voltToDACVal(outputVolt); 
   setOutput(MCP48X2_DAC_CH_A, value);
   setOutput(MCP48X2_DAC_CH_B, DAC_MAX_OUT_VALUE - value);
   delay(PAUSE);
