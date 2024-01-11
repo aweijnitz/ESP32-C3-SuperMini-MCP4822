@@ -2,7 +2,7 @@
 
 This sketch is a basic blueprint demonstrating how to connect the MCP4822 DAC to an ESP32-C3 Super Mini.
 
-The code is not optimized for speed, but for portability. It should work on any Arduino or ESp32 with SPI pins.
+The code is not optimized for speed, but for portability. It should work on any Arduino or ESP32 with SPI pins.
 For increased speed replace `digitalWrite(...)` with direct port manipulation to toggle the chip select low/high.
 
 ## Getting started
