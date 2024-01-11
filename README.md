@@ -5,7 +5,7 @@ This sketch is a basic blueprint demonstrating how to connect a MCP4822 DAC to a
 The code is not optimized for speed, but for portability. It should work on any Arduino or ESp32 with SPI pins.
 For increased speed replace `digitalWrite(...)` with direct port manipulation to toggle the chip select low/high.
 
-## Geeting started
+## Getting started
 
 - Target device: ESP32-C3 Super Mini
 - Board to set in Arduino IDE: ESP32 Dev Board
@@ -13,3 +13,11 @@ For increased speed replace `digitalWrite(...)` with direct port manipulation to
 
 
 ![ESP32-C3 Super Mini connected to MCP4288 DAC](./docs/ESP32-C3-SuperMini_SPI-DAC_Connect.png)
+
+## Example output
+
+Scope measuring VoutA and VoutB that are outputting the inverse of each other (this is what the code does).
+
+There is quite a lot of interference because of breadboard and lack of decoupling capacitors.
+
+![Oscilloscope photo](./docs/scope-shot.jpg)
