@@ -9,7 +9,7 @@ For increased speed replace `digitalWrite(...)` with direct port manipulation to
 
 - Target device: ESP32-C3 Super Mini
 - Board to set in Arduino IDE: ESP32 Dev Board
-- [MCP4822 Datasheet](./docs/MCP4822-DAC-datasheet.pdf) TIP: See applicatoon notes and sample schematics at the end of the sheet. Very useful!
+- [MCP4822 Datasheet](./docs/MCP4822-DAC-datasheet.pdf) TIP: See application notes and sample schematics at the end of the sheet. Very useful!
 
 
 ![ESP32-C3 Super Mini connected to MCP4288 DAC](./docs/ESP32-C3-SuperMini_SPI-DAC_Connect.png)
