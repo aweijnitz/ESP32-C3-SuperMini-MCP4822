@@ -53,7 +53,9 @@ void setup() {
 }
 
 
-
+/**
+ * Send value to DAC channel (0 or 1)
+ */
 void setOutput(byte channel, uint16_t val) {
   uint16_t data = val;
   //data <<= SHIFT_BITS_CNT; //0 for MCP4822
