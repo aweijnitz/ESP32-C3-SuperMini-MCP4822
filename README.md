@@ -11,6 +11,9 @@ For increased speed replace `digitalWrite(...)` with direct port manipulation to
 - Board to set in Arduino IDE: ESP32 Dev Board
 - [MCP4822 Datasheet](./docs/MCP4822-DAC-datasheet.pdf) TIP: See application notes and sample schematics at the end of the sheet. Very useful!
 
+## Serial.println not working?
+
+See this thread: https://www.reddit.com/r/esp32/comments/16qaf8u/trouble_reading_serial_output_on_my_esp32c3/
 
 ![ESP32-C3 Super Mini connected to MCP4288 DAC](./docs/ESP32-C3-SuperMini_SPI-DAC_Connect.png)
 
